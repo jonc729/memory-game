@@ -64,7 +64,7 @@ function createBoard () {
         card.setAttribute('data-id', i)
         card.addEventListener('click', flipCard)
         gridDisplay.append(card)
-    }
+     }
 }
 
 createBoard()
@@ -82,7 +82,7 @@ function checkMatch() {
         cards[optionTwoId].setAttribute('src','images/blank.png')
     }
 
-    if (optionOneId == optionTwoid) {
+    if (cardsChosen[0] == cardsChosen[1]) {
         alert('You found a match!')
         cards[optionOneId].setAttribute('src','images/white.png')
         cards[optionTwoId].setAttribute('src','images/white.png')
